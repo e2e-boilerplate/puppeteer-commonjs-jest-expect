@@ -16,19 +16,19 @@ describe("google search", () => {
     }
   });
 
-  it("should be on google search page", async () => {
+  test("should be on google search page", async () => {
     const title = await page.title();
     expect(title).toEqual("Google");
   });
 
-  it("should search for Cheese!", async () => {
+  test("should search for Cheese!", async () => {
     const searchBox = ".gLFyf.gsfi";
     expect(!!(await page.$(searchBox))).toBe(true);
     await page.type(searchBox, "Cheese!", { delay: 100 });
     await page.keyboard.press("\n");
   });
 
-  it('the page title should start with "Cheese!', async () => {
+  test('the page title should start with "Cheese!', async () => {
     await page.waitFor("#resultStats");
     const title = await page.title();
     const words = title.split(" ");
