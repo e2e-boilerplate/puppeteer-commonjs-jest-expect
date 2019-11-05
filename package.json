@@ -31,6 +31,6 @@
   },
   "devDependencies": {
     "husky": "3.0.9",
-    "pretty-quick": "2.0.0"
+    "pretty-quick": "2.0.1"
   }
 }
