@@ -17,6 +17,7 @@ describe("google search", () => {
         .catch(() => {}),
       page.waitFor("body", { timeout: 6000 }).catch(() => {})
     ]);
+    jest.setTimeout(10000);
   });
 
   afterAll(() => {
