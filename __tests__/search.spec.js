@@ -11,13 +11,7 @@ describe("google search", () => {
       : await puppeteer.launch({ headless: false });
     page = await browser.newPage();
 
-    await Promise.race([
-      page
-        .goto("https://www.google.com", { waitUntil: "networkidle0" })
-        .catch(() => {}),
-      page.waitFor("body", { timeout: 6000 }).catch(() => {})
-    ]);
-    jest.setTimeout(10000);
+    await page.goto("https://www.google.com", { waitUntil: "networkidle0" });
   });
 
   afterAll(() => {
@@ -27,6 +21,7 @@ describe("google search", () => {
   });
 
   test("should be on google search page", async () => {
+    jest.setTimeout(10000);
     await page.waitFor(searchBox);
 
     const title = await page.title();
