@@ -6,7 +6,9 @@ const searchBox = ".gLFyf.gsfi";
 
 describe("google search", () => {
   beforeAll(async () => {
-    browser = await puppeteer.launch({ headless: false });
+    browser = process.env.GITHUB_ACTIONS
+      ? await puppeteer.launch()
+      : await puppeteer.launch({ headless: false });
     page = await browser.newPage();
 
     await Promise.race([
