@@ -3,7 +3,7 @@ const puppeteer = require("puppeteer");
 let page;
 let browser;
 
-describe("google search", () => {
+describe("Sandbox", () => {
   beforeAll(async () => {
     browser = process.env.GITHUB_ACTIONS
       ? await puppeteer.launch()
