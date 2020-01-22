@@ -2,7 +2,6 @@ const puppeteer = require("puppeteer");
 
 let page;
 let browser;
-const searchBox = ".gLFyf.gsfi";
 
 describe("google search", () => {
   beforeAll(async () => {
@@ -11,7 +10,9 @@ describe("google search", () => {
       : await puppeteer.launch({ headless: false });
     page = await browser.newPage();
 
-    await page.goto("https://www.google.com", { waitUntil: "networkidle0" });
+    await page
+      .goto("https://xgirma.github.io/sandbox/", { waitUntil: "networkidle0" })
+      .catch(() => {});
   });
 
   afterAll(() => {
@@ -20,26 +21,11 @@ describe("google search", () => {
     }
   });
 
-  test("should be on google search page", async () => {
-    jest.setTimeout(10000);
-    await page.waitFor(searchBox);
+  test("should be on the sandbox", async () => {
+    await page.waitFor("h1");
+    const title = await page.$eval("h1", el => el.textContent);
 
-    const title = await page.title();
-    expect(title).toEqual("Google");
-  });
-
-  test("should search for Cheese!", async () => {
-    expect(!!(await page.$(searchBox))).toBe(true);
-
-    await page.type(searchBox, "Cheese!", { delay: 100 });
-    await page.keyboard.press("\n");
-  });
-
-  test('the page title should start with "Cheese!', async () => {
-    await page.waitFor("#resultStats");
-
-    const title = await page.title();
-    const words = title.split(" ");
-    expect(words[0]).toEqual("Cheese!");
+    expect(await page.title()).toEqual("Sandbox");
+    expect(title).toEqual("Sandbox");
   });
 });
