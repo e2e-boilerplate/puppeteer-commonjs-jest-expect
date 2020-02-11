@@ -1,12 +1,12 @@
-# Puppeteer: (commonjs, jest)
+# Puppeteer: (CommonJS, Jest and Expect)
 
-[![GitHub Actions status | e2e-boilerplates/puppeteer-commonjs-jest](https://github.com/e2e-boilerplates/puppeteer-commonjs-jest/workflows/puppeteer-commonjs-jest/badge.svg)](https://github.com/e2e-boilerplates/puppeteer-commonjs-jest/actions?workflow=puppeteer-commonjs-jest)
+[![GitHub Actions status | e2e-boilerplates/puppeteer-commonjs-jest-expect](https://github.com/e2e-boilerplates/puppeteer-commonjs-jest-expect/workflows/puppeteer-commonjs-jest-expect/badge.svg)](https://github.com/e2e-boilerplates/puppeteer-commonjs-jest-expect/actions?workflow=puppeteer-commonjs-jest-expect)
 
-Puppeteer end-to-end test automation boilerplate project. Using commonjs and jest.
+Puppeteer end-to-end test automation boilerplate, using CommonJS, Jest and Expect.
 
 ## Getting Started
 
-    git clone git@github.com:e2e-boilerplates/puppeteer-commonjs-jest.git
-    cd puppeteer-commonjs-jest
+    git clone git@github.com:e2e-boilerplates/puppeteer-commonjs-jest-expect.git
+    cd puppeteer-commonjs-jest-expect
     npm install
     npm run test
