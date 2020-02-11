@@ -1,4 +1,4 @@
-name: puppeteer-commonjs-jest
+name: puppeteer-commonjs-jest-expect
 
 on: 
   push:
@@ -16,11 +16,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: INSTALL PACKAGES
+    - name: INSTALL
       run: |
         npm ci
       env:
         CI: true
-    - name: RUN TESTS
+    - name: LINT
+      run: |
+        npm run lint
+    - name: TEST
       run: |
         npm run test
