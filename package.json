@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-commonjs-jest",
+  "name": "puppeteer-commonjs-jest-expect",
   "version": "1.0.0",
   "description": "Puppeteer end-to-end test automation boilerplate project. Using commonjs and jest.",
   "scripts": {
