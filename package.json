@@ -1,19 +1,5 @@
 {
-  "name": "puppeteer-commonjs-jest-expect",
-  "version": "1.0.0",
-  "description": "Puppeteer end-to-end test automation boilerplate project. Using commonjs and jest.",
-  "scripts": {
-    "test": "jest",
-    "lint": "npx eslint --ext .js ./ --fix"
-  },
-  "keywords": [
-    "puppeteer",
-    "jest",
-    "boilerplate",
-    "example"
-  ],
   "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
-  "license": "MIT",
   "dependencies": {
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
@@ -24,13 +10,37 @@
     "prettier": "1.19.1",
     "puppeteer": "2.1.1"
   },
+  "description": "Puppeteer end-to-end test automation boilerplate project. Using commonjs and jest.",
+  "devDependencies": {
+    "eslint-plugin-json": "^2.1.0",
+    "husky": "4.2.3",
+    "pretty-quick": "2.0.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "devDependencies": {
-    "husky": "4.2.3",
-    "pretty-quick": "2.0.1"
-  }
+  "keywords": [
+    "boilerplate",
+    "commonjs",
+    "e2e",
+    "e2e tests",
+    "example",
+    "expect",
+    "integration test",
+    "jest",
+    "puppeteer"
+  ],
+  "license": "MIT",
+  "name": "puppeteer-commonjs-jest-expect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplates/puppeteer-commonjs-jest-expect.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "npx eslint --ext .js ./ --fix"
+  },
+  "version": "1.0.0"
 }
