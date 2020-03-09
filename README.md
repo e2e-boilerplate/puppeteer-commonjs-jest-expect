@@ -6,7 +6,7 @@ Puppeteer end-to-end test automation boilerplate, using Commonjs, Jest and Expec
 
 ## Getting Started
 
-git clone git@github.com:e2e-boilerplate/puppeteer-commonjs-jest-expect.git
-cd puppeteer-commonjs-jest-expect
-npm install
-npm run test
+    	git clone git@github.com:e2e-boilerplate/puppeteer-commonjs-jest-expect.git
+    	cd puppeteer-commonjs-jest-expect
+    	npm install
+    	npm run test
