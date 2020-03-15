@@ -15,7 +15,7 @@
   },
   "description": "Puppeteer end-to-end test automation boilerplate. using Commonjs, Jest and Expect.",
   "devDependencies": {
-    "eslint-plugin-json": "2.1.0",
+    "eslint-plugin-json": "2.1.1",
     "husky": "4.2.3",
     "pretty-quick": "2.0.1"
   },
