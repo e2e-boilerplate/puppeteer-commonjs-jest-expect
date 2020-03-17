@@ -1,4 +1,4 @@
-[![GitHub Actions status | e2e-boilerplate/puppeteer-commonjs-jest-expect](https://github.com/e2e-boilerplate/puppeteer-commonjs-jest-expect/workflows/puppeteer-commonjs-jest-expect/badge.svg)](https://github.com/e2e-boilerplate/puppeteer-commonjs-jest-expect/actions?workflow=puppeteer-commonjs-jest-expect)
+[![GitHub Actions status | e2e-boilerplate/puppeteer-commonjs-jest-expect](https://github.com/e2e-boilerplate/puppeteer-commonjs-jest-expect/workflows/puppeteer-commonjs-jest-expect/badge.svg)](https://github.com/e2e-boilerplate/puppeteer-commonjs-jest-expect/actions?workflow=puppeteer-commonjs-jest-expect) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Puppeteer Boilerplate
 
