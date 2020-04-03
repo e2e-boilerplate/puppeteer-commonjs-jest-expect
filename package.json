@@ -21,7 +21,7 @@
   "homepage": "https://github.com/e2e-boilerplate/puppeteer-commonjs-jest-expect#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged --allow-empty"
     }
   },
   "keywords": [
