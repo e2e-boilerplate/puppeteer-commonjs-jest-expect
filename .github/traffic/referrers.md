@@ -1,3 +1,3 @@
 | referrer | count | uniques |
 | :------- | :---- | :------ |
-| Google   | 1     | 1       |
+| Google   | 3     | 1       |
