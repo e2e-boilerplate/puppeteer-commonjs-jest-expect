@@ -4,7 +4,7 @@
     "url": "https://github.com/e2e-boilerplate/puppeteer-commonjs-jest-expect/issues"
   },
   "dependencies": {
-    "jest": "26.6.3",
+    "jest": "29.7.0",
     "puppeteer": "5.5.0"
   },
   "description": "Puppeteer end-to-end test automation boilerplate. Using Commonjs, Jest and Expect.",
